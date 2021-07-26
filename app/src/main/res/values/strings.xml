@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">INDOXXI</string>
+    <string name="title_activity_detail_show">Detail Show</string>
+    <string name="title_activity_detail_tv">Detail TV Show</string>
+
+    <string name="title">Title</string>
+    <string name="synopsis_description">Synopsis</string>
+    <string name="synopsis_title">Synopsis</string>
+    <string name="film">Film</string>
+    <string name="tv_show">TV Show</string>
+
+    <string name="director">Director: %s</string>
+    <string name="writers">Writers: %s</string>
+    <string name="Stars">Stars: %s</string>
+    <string name="rating">%d</string>
+    <string name="duration">%s</string>
+    <string name="released">%s</string>
+    <string name="genre">%s</string>
+    <string name="film_rating">%s</string>
+
+    <string name="fav_film">Film</string>
+    <string name="fav_tv_show">TV Show</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_favorite">favorite</string>
+    <string name="favorite_show_list">Favorite Show List</string>
+
+    <string name="message_undo">Cancel deletes the previous item?</string>
+    <string name="message_ok">OK</string>
+</resources>

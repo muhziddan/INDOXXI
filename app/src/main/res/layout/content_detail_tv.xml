@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/image_poster2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="18dp"
+        android:src="@color/red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tv_title2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="10dp"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/tv_rating2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_poster2"
+        tools:text="@string/title" />
+
+    <TextView
+        android:id="@+id/tv_rating2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:text="@string/rating"
+        app:drawableStartCompat="@drawable/ic_baseline_star_24"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_title2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_title2" />
+
+    <LinearLayout
+        android:id="@+id/ll_film_detail2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title2">
+
+        <TextView
+            android:id="@+id/tv_film_rating2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="7dp"
+            android:gravity="start"
+            android:textSize="14sp"
+            tools:text="@string/film_rating" />
+
+        <TextView
+            android:id="@+id/tv_duration2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="7dp"
+            android:drawablePadding="7dp"
+            android:gravity="start"
+            android:textSize="14sp"
+            app:drawableStartCompat="@drawable/ic_baseline_circle_24"
+            tools:text="@string/duration" />
+
+        <TextView
+            android:id="@+id/tv_genre2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="7dp"
+            android:drawablePadding="7dp"
+            android:gravity="start"
+            android:textSize="14sp"
+            app:drawableStartCompat="@drawable/ic_baseline_circle_24"
+            tools:text="@string/genre" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_released2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@id/ll_film_detail2"
+        app:layout_constraintTop_toBottomOf="@+id/ll_film_detail2"
+        tools:text="@string/released" />
+
+    <TextView
+        android:id="@+id/tv_title_syn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/synopsis_title"
+        android:textColor="@color/gold"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_film_detail2" />
+
+    <TextView
+        android:id="@+id/tv_synopsis_desc2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_syn2"
+        tools:text="@string/synopsis_description" />
+
+    <TextView
+        android:id="@+id/tv_director2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/director"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_synopsis_desc2" />
+
+    <TextView
+        android:id="@+id/tv_writer2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/writers"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_director2" />
+
+    <TextView
+        android:id="@+id/tv_star2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Stars"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_writer2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
